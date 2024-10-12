@@ -16,39 +16,39 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/images/icons/apple-touch-icon.png"
+      href="{{ asset('customer/images/icons/apple-touch-icon.png') }}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/images/icons/favicon-32x32.png"
+      href="{{ asset('customer/images/icons/favicon-32x32.png') }}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/images/icons/favicon-16x16.png"
+      href="{{ asset('customer/images/icons/favicon-16x16.png') }}"
     />
-    <link rel="manifest" href="assets/images/icons/site.html" />
-    <link
+    <link rel="manifest" href="{{ asset('customer/images/icons/site.html" />
+   ') }} <link
       rel="mask-icon"
-      href="assets/images/icons/safari-pinned-tab.svg"
+      href="{{ asset('customer/images/icons/safari-pinned-tab') }}.svg"
       color="#666666"
     />
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset('customer/images/icons/favicon.ico') }}" />
     <meta name="apple-mobile-web-app-title" content="Molla" />
     <meta name="application-name" content="Molla" />
     <meta name="msapplication-TileColor" content="#cc9966" />
     <meta
       name="msapplication-config"
-      content="assets/images/icons/browserconfig.xml"
+      content="{{ asset('customer/images/icons/browserconfig.xml') }}"
     />
     <meta name="theme-color" content="#ffffff" />
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ asset('customer/css/bootstrap.min.css') }}" />
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{ asset('customer/css/style.css') }}" />
   </head>
 
   <body>
@@ -70,7 +70,7 @@
 
               <a href="index-1.html" class="logo">
                 <img
-                  src="assets/images/logo.png"
+                  src="{{ asset('customer/images/logo.png') }}"
                   alt="Molla Logo"
                   width="105"
                   height="25"
@@ -204,7 +204,7 @@
                       <figure class="product-image-container">
                         <a href="product.html" class="product-image">
                           <img
-                            src="assets/images/products/cart/product-1.jpg"
+                            src="{{ asset('customer/images/products/cart/product-1.jpg') }}"
                             alt="product"
                           />
                         </a>
@@ -233,7 +233,7 @@
                       <figure class="product-image-container">
                         <a href="product.html" class="product-image">
                           <img
-                            src="assets/images/products/cart/product-2.jpg"
+                            src="{{ asset('customer/images/products/cart/product-2.jpg') }}"
                             alt="product"
                           />
                         </a>
@@ -290,7 +290,7 @@
         <div class="container">
           <div
             class="page-header page-header-big text-center"
-            style="background-image: url('items/item5.gif')"
+            
           >
             <!-- background pic ng asiano-->
             <h1 class="page-title text-white">
@@ -438,7 +438,7 @@
                       <div class="col-sm-5 col-xl-6">
                         <figure class="store-media mb-2 mb-lg-0">
                           <img
-                            src="assets/images/stores/img-1.jpg"
+                            src="{{ asset('customer/images/stores/img-1.jpg') }}"
                             alt="image"
                           />
                         </figure>
@@ -478,7 +478,7 @@
                       <div class="col-sm-5 col-xl-6">
                         <figure class="store-media mb-2 mb-lg-0">
                           <img
-                            src="assets/images/stores/img-2.jpg"
+                            src="{{ asset('customer/images/stores/img-2.jpg') }}"
                             alt="image"
                           />
                         </figure>

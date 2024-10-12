@@ -13,3 +13,8 @@ Route::get('/homepage', function () {
 Route::get('/announcement', function () {
     return view('announcement');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
