@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{ asset('customerYPE html>
 <html lang="en">
   <!-- molla/blog-mask-masonry.html  22 Nov 2019 10:04:42 GMT -->
   <head>
@@ -7,8 +7,9 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
     />
-    <title>ArtClick</title>
+    <title>ARTCLICK</title>
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Molla - Bootstrap eCommerce Template" />
     <meta name="author" content="p-themes" />
@@ -16,27 +17,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{{ asset('customer/images/icon/apple-touch-icon.png') }}" />
+      href="assets/images/icons/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="{{ asset('customer/images/icones/faveicon-32x32.png') }}"
+      href="assets/images/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="{{ asset('customer/images/icons/favicon-16x16.png') }}"
-    
-      link rel="manifest" href="{{asset('customer/images/icon/site.html') }}" />
+      href="assets/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/icons/site.html" />
     <link
       rel="mask-icon"
-      href="{{ asset('customer/images/safari-pinned-tab.svg') }}"
+      href="assets/images/icons/safari-pinned-tab.svg"
       color="#666666"
     />
-
-    <link rel="shortcut icon" href="{{ asset('customer/images/icons/favicon.ico') }}" />
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
     <meta name="apple-mobile-web-app-title" content="Molla" />
     <meta name="application-name" content="Molla" />
     <meta name="msapplication-TileColor" content="#cc9966" />
@@ -46,13 +47,13 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="{{asset('customer/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="{{ asset('customer/css/plugins/owl-carousel/owl.carousel.css') }}"
+      href="assets/css/plugins/owl-carousel/owl.carousel.css"
     />
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="{{ asset('customer/css/style.css') }}" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -68,7 +69,7 @@
 
               <a href="index.html" class="logo">
                 <img
-                  src="{{ asset('customer/images/logo.png') }}"
+                  src="assets/images/logo.png"
                   alt="Molla Logo"
                   width="105"
                   height="25"
@@ -103,10 +104,10 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="blog.html" class="sf-with-ul">About</a>
+                    <a href="contact.html" class="sf-with-ul">About</a>
                   </li>
                   <li>
-                    <a href="elements-list.html" class="sf-with-ul">Contact</a>
+                    <a href="contact.html" class="sf-with-ul">Contact</a>
                   </li>
                 </ul>
                 <!-- End .menu -->
@@ -124,6 +125,7 @@
       <main class="main">
         <div
           class="page-header text-center"
+          style="background-image: url('assets/images/page-header-bg.jpg')"
         >
           <div class="container">
             <h1 class="page-title">Announcement<span>Asiano</span></h1>
@@ -138,12 +140,6 @@
                 <!-- Announcements Section -->
                 <main>
                     <section class="announcements">
-                        <div class="announcement-tabs">
-                            <a href="#" data-filter="all"><button>All</button></a>
-                            <a href="#" data-filter=".new-arrivals"><button>New Arrivals</button></a>
-                            <a href="#" data-filter=".events"><button>Events</button></a>
-                        </div>
-        
                         <!-- start announcement-list -->
                         <div class="announcement-list">
                             <!-- start announcement here -->
@@ -240,14 +236,13 @@
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <div class="widget widget-about">
-                <img 
-                      src="{{ asset('customer/images/logo.png') }}" 
-                      class="footer-logo" 
-                      alt="Footer Logo" 
-                      width="105" 
-                      height="25" 
+                  <img
+                    src="assets/images/logo.png"
+                    class="footer-logo"
+                    alt="Footer Logo"
+                    width="105"
+                    height="25"
                   />
-
                   <p>
                     Praesent dapibus, neque id cursus ucibus, tortor neque
                     egestas augue, eu vulputate magna eros eu erat.
@@ -365,7 +360,7 @@
             <!-- End .footer-copyright -->
             <figure class="footer-payments">
               <img
-                src="{{ asset('Customer/images/payments.png') }}"
+                src="assets/images/payments.png"
                 alt="Payment methods"
                 width="272"
                 height="20"
@@ -474,15 +469,15 @@
     <!-- End .modal -->
 
     <!-- Plugins JS File -->
+    <script src="{{ asset('customer/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('customer/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('customer/js/jquery.hoverIntent.min.js') }}"></script>
     <script src="{{ asset('customer/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('customer/js/superfish.min.js') }}"></script>
     <script src="{{ asset('customer/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('customer/js/imagesloaded.pkgd.min.js') }}"></script>
     <script src="{{ asset('customer/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('customer/js/jquery.min.js') }}"></script>
-    <!-- Main JS File -->
-    <script src="{{ asset('customer/js/bootstrap.bundle.min.js') }}"></script>
+     <!-- Main JS File -->
     <script src="{{ asset('customer/js/main.js') }}"></script>
   </body>
 
