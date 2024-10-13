@@ -7,26 +7,26 @@ Route::get('/', function () {
 });
 
 Route::get('/homepage', function () {
-    return view('homepage');
+    return view('customer.homepage');
 })->name('homepage');
 
 
 Route::get('/announcement', function () {
-    return view('announcement');
+    return view('customer.announcement');
 })->name('announcement');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('customer.contact');
 })->name('contact');
 
 Route::get('/shop-category', function () {
-    return view('shop-category');
+    return view('customer.shop-category');
 })->name('shop-category');
 
 Route::get('/shop-items', function () {
-    return view('shop-items');
+    return view('customer.shop-items');
 })->name('shop-items');
 
 Route::get('/ind', function () {
-    return view('ind');
+    return view('customer.ind');
 })->name('ind');
