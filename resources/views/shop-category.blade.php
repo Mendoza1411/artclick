@@ -92,10 +92,10 @@
 
             <nav class="main-nav">
               <ul class="menu sf-arrows">
-                <li class="megamenu-container active">
+                <li >
                   <a href="{{ route('homepage') }}" class="sf-with-ul">Home</a>
                 </li>
-                <li>
+                <li class="megamenu-container active">
                   <a href="{{ route('shop-category') }}" class="sf-with-ul">Shop</a>
                 </li>
                 <li>
@@ -227,38 +227,91 @@
       <!-- End .header -->
 
       <main class="main">
-        <div class="intro-slider-container">
-          <div
-            class="owl-carousel owl-simple owl-light owl-nav-inside"
-            data-toggle="owl"
-            data-owl-options='{"nav": false}'
-          >
-            <div
-              class="intro-slide"
-            >
-              <div class="container intro-content">
-                <p class="intro-subtitle">Express your art with handmade art</p>
-                <!-- End .h3 intro-subtitle -->
-                <h4 class="intro-title">
-                  Enhance your space with unique handmade <br />
-                  art and unique crafts that showcase your style <br />
-                  and add character.
-                </h4>
-                <!-- End .intro-title -->
 
-                <a href="login.html" class="btn btn-primary">
-                  <span>Sign Up</span>
-                  <i class="icon-long-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <!-- End .intro-slide -->
-          </div>
-          <!-- End .owl-carousel owl-simple -->
-          <span class="slider-loader text-white"></span
-          ><!-- End .slider-loader -->
-        </div>
         <!-- End .intro-slider-container -->
+
+        <!-- Category Title -->
+<h2 class="category-title">CATEGORY</h2>
+
+<!-- Subtitle -->
+<h3 class="category-subtitle">Explore our wide range of categories</h3>
+
+<!--start product category-->
+<section class="category-section">
+  <a href="product.html"  class="category-card">
+    <img src="{{ asset('customer/images/items/item4.jpg') }}" alt="Category Image" />
+    <h3>Wooden</h3>
+    <p>Short description or subtext</p>
+    
+    <div class="ratings-container">
+      <div class="ratings">
+        <div class="ratings-val" style="width: 79%"></div>
+        <!-- End .ratings-val -->
+      </div>
+      <!-- End .ratings -->
+      <span class="ratings-text">( 79k Reviews )</span>
+    </div>
+    <!-- End .rating-container -->
+  </a>
+  <a href="product.html" class="category-card">
+    <img src="{{ asset('customer/images/items/item2.jpg') }}" alt="Category Image" />
+    <h3>Furnitures</h3>
+    <p>Short description or subtext</p>
+
+    <div class="ratings-container">
+      <div class="ratings">
+        <div class="ratings-val" style="width: 79%"></div>
+        <!-- End .ratings-val -->
+      </div>
+      <!-- End .ratings -->
+      <span class="ratings-text">( 79k Reviews )</span>
+    </div>
+    <!-- End .rating-container -->
+  </a>
+  <a href="product.html"  class="category-card">
+    <img src="{{ asset('customer/images/items/item3.jpg') }}" alt="Category Image" />
+    <h3>Decorations</h3>
+    <p>Short description or subtext</p>
+    <div class="ratings-container">
+      <div class="ratings">
+        <div class="ratings-val" style="width: 79%"></div>
+        <!-- End .ratings-val -->
+      </div>
+      <!-- End .ratings -->
+      <span class="ratings-text">( 79k Reviews )</span>
+    </div>
+    <!-- End .rating-container -->
+    </a>
+  <a href="product.html"  class="category-card">
+    <img src="{{ asset('customer/images/items/item2.jpg') }}" alt="Category Image" />
+    <h3>Accessories</h3>
+    <p>Short description or subtext</p>
+    <div class="ratings-container">
+      <div class="ratings">
+        <div class="ratings-val" style="width: 79%"></div>
+        <!-- End .ratings-val -->
+      </div>
+      <!-- End .ratings -->
+      <span class="ratings-text">( 79k Reviews )</span>
+    </div>
+    <!-- End .rating-container -->
+  <a>
+  <a href="{{ route('shop-items') }}" class="category-card">
+    <img src="{{ asset('customer/images/items/item3.jpg') }}" alt="Category Image" />
+    <h3>Turtle Gift</h3>
+    <p>Short description or subtext</p>
+    <div class="ratings-container">
+      <div class="ratings">
+        <div class="ratings-val" style="width: 79%"></div>
+        <!-- End .ratings-val -->
+      </div>
+      <!-- End .ratings -->
+      <span class="ratings-text">( 79k Reviews )</span>
+    </div>
+    <!-- End .rating-container --> 
+</a>
+</section>
+ <!--end product category-->
 
        
         <div
