@@ -80,17 +80,17 @@
                   <a href="{{ route('shop-category') }}" class="sf-with-ul">Shop</a>
                 </li>
                 <li>
-                  <a href="product.html" class="sf-with-ul">Gallery</a>
+                  <a href="{{ route('gallery') }}" class="sf-with-ul">Gallery</a>
                 </li>
 
                 <li>
-                  <a href="blog.html" class="sf-with-ul">Announcent</a>
+                  <a href="{{ route('announcement') }}" class="sf-with-ul">Announcement</a>
                 </li>
                 <li>
-                  <a href="elements-list.html" class="sf-with-ul">About</a>
+                  <a href="{{ route('about') }}" class="sf-with-ul">About</a>
                 </li>
                 <li class="megamenu-container active">
-                  <a href="elements-list.html" class="sf-with-ul">Contact</a>
+                  <a href="{{ route('contact') }}" class="sf-with-ul">Contact</a>
                 </li>
               </ul>
 
@@ -120,81 +120,21 @@
                 title="Account" aria-label="Compare Products">
                 <i class="icon-user"></i>
               </a>
-
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-cart-action">
+                  <a href="cart.html" class="btn btn-primary">Account</a>
+                  <a href="{{ route('signin') }}" class="btn btn-outline-primary-2"><span>Sign Up</span><i class="icon-long-arrow-right"></i></a>
+                </div><!-- End .dropdown-cart-total -->
+              </div><!-- End .dropdown-menu -->
             </div>
             <!-- End .compare-dropdown -->
 
             <div class="dropdown cart-dropdown">
-              <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" data-display="static">
+              <a href="{{ route('cart') }}" class="dropdown-toggle" role="button">
                 <i class="icon-shopping-cart"></i>
-
               </a>
 
-              <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-cart-products">
-                  <div class="product">
-                    <div class="product-cart-details">
-                      <h4 class="product-title">
-                        <a href="product.html">Beige knitted elastic runner shoes</a>
-                      </h4>
 
-                      <span class="cart-product-info">
-                        <span class="cart-product-qty">1</span>
-                        x $84.00
-                      </span>
-                    </div>
-                    <!-- End .product-cart-details -->
-
-                    <figure class="product-image-container">
-                      <a href="product.html" class="product-image">
-                        <img src="assets/images/products/cart/product-1.jpg" alt="product" />
-                      </a>
-                    </figure>
-                    <a href="#" class="btn-remove" title="Remove Product"><i
-                        class="icon-close"></i></a>
-                  </div>
-                  <!-- End .product -->
-
-                  <div class="product">
-                    <div class="product-cart-details">
-                      <h4 class="product-title">
-                        <a href="product.html">Blue utility pinafore denim dress</a>
-                      </h4>
-
-                      <span class="cart-product-info">
-                        <span class="cart-product-qty">1</span>
-                        x $76.00
-                      </span>
-                    </div>
-                    <!-- End .product-cart-details -->
-
-                    <figure class="product-image-container">
-                      <a href="product.html" class="product-image">
-                        <img src="assets/images/products/cart/product-2.jpg" alt="product" />
-                      </a>
-                    </figure>
-                    <a href="#" class="btn-remove" title="Remove Product"><i
-                        class="icon-close"></i></a>
-                  </div>
-                  <!-- End .product -->
-                </div>
-                <!-- End .cart-product -->
-
-                <div class="dropdown-cart-total">
-                  <span>Total</span>
-
-                  <span class="cart-total-price">$160.00</span>
-                </div>
-                <!-- End .dropdown-cart-total -->
-
-                <div class="dropdown-cart-action">
-                  <a href="cart.html" class="btn btn-primary">View Cart</a>
-                  <a href="checkout.html" class="btn btn-outline-primary-2"><span>Checkout</span><i
-                      class="icon-long-arrow-right"></i></a>
-                </div>
-                <!-- End .dropdown-cart-total -->
-              </div>
               <!-- End .dropdown-menu -->
             </div>
             <!-- End .cart-dropdown -->
@@ -221,7 +161,8 @@
       <!-- End .breadcrumb-nav -->
       <div class="container">
         <div
-          class="page-header page-header-big text-center">
+          class="page-header page-header-big text-center"
+          style="background-image: url('customer/images/items/item5.gif')">
           <!-- background pic ng asiano-->
           <h1 class="page-title text-white">
             Contact us<span class="text-white">keep in touch with us</span>
@@ -349,7 +290,143 @@
           </div>
           <!-- End .row -->
 
+          <div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
+              <div class="container">
+                <h1 class="page-title">FAQs</h1>
+              </div>
+              <!-- End .container -->
+            </div>
+            <!-- End .page-header -->
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
 
+            </nav>
+            <!-- End .breadcrumb-nav -->
+             
+          <div class="page-content">
+              <div class="container">
+                <div class="accordion accordion-rounded" id="accordion-1">
+                  <div class="card card-box card-sm bg-light">
+                    <div class="card-header" id="heading-1">
+                      <h2 class="card-title">
+                        <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true"
+                          aria-controls="collapse-1">
+                          What kind of products does ArtClick offer?
+                        </a>
+                      </h2>
+                    </div>
+                    <!-- End .card-header -->
+                    <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-1">
+                      <div class="card-body">
+                        ArtClick features a diverse selection of handcrafted items
+                        Palawan, including jewerly, texttiles, sculptures, home decor, and more.
+                      </div>
+                      <!-- End .card-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
+                  <!-- End .card -->
+
+                  <div class="card card-box card-sm bg-light">
+                    <div class="card-header" id="heading-2">
+                      <h2 class="card-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2"
+                          aria-expanded="false" aria-controls="collapse-2">
+                          Can I learn more about the cultural background of
+                          the products?
+                        </a>
+                      </h2>
+                    </div>
+                    <!-- End .card-header -->
+                    <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-1">
+                      <div class="card-body">
+                        Yes, ARTCLICK products highlight the rich heritage of
+                        Asiano and Palawan. They feature traditional pottery, texttiles,
+                        and scultures, showcasing the unique artisy and craftmanship of
+                        Palawan's local artisans.
+                      </div>
+                      <!-- End .card-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
+                  <!-- End .card -->
+
+                </div>
+                <!-- End .accordion -->
+
+                <h2 class="title text-center mb-3">Orders and Returns</h2>
+                <!-- End .title -->
+                <div class="accordion accordion-rounded" id="accordion-2">
+                  <div class="card card-box card-sm bg-light">
+                    <div class="card-header" id="heading2-1">
+                      <h2 class="card-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-1"
+                          aria-expanded="false" aria-controls="collapse2-1">
+                          How do I place an order to ArtClick?
+                        </a>
+                      </h2>
+                    </div>
+                    <!-- End .card-header -->
+                    <div id="collapse2-1" class="collapse" aria-labelledby="heading2-1" data-parent="#accordion-2">
+                      <div class="card-body">
+                        To place an order to ArtClick, browse ands select items, add them to your cart,
+                        review your cart, and then proceed to checkout. Enter shipping and payment information.
+                      </div>
+                      <!-- End .card-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
+                  <!-- End .card -->
+
+                  <div class="card card-box card-sm bg-light">
+                    <div class="card-header" id="heading2-2">
+                      <h2 class="card-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-2"
+                          aria-expanded="false" aria-controls="collapse2-2">
+                          Is it safe to shop online with ArtClick?
+                        </a>
+                      </h2>
+                    </div>
+                    <!-- End .card-header -->
+                    <div id="collapse2-2" class="collapse" aria-labelledby="heading2-2" data-parent="#accordion-2">
+                      <div class="card-body">
+                        Yes, it is safe to shop online with ArtClick. We use secure payment
+                        methods and encrypt your personal information to protect
+                        your privacy.
+                      </div>
+                      <!-- End .card-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
+                  <!-- End .card -->
+
+                  <div class="card card-box card-sm bg-light">
+                    <div class="card-header" id="heading2-3">
+                      <h2 class="card-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2-3"
+                          aria-expanded="false" aria-controls="collapse2-3">
+                          How do I find a specific product on ArtClick?
+                        </a>
+                      </h2>
+                    </div>
+                    <!-- End .card-header -->
+                    <div id="collapse2-3" class="collapse" aria-labelledby="heading2-3" data-parent="#accordion-2">
+                      <div class="card-body">
+                        To find a specific product on ArtClic, use the search bar
+                        at the top of the homepage. Enter keywords related to the
+                        product you're looking for. You can also browse through categories.
+                      </div>
+                      <!-- End .card-body -->
+                    </div>
+                    <!-- End .collapse -->
+                  </div>
+                  <!-- End .card -->
+                </div>
+                <!-- End .accordion -->
+
+
+              </div>
+              <!-- End .accordion -->
+            </div>
 
           <!-- End .stores -->
         </div>
@@ -746,136 +823,77 @@
     <!-- End .modal -->
 
     <footer class="footer">
-      <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget widget-about">
-                <img
-                  src="{{ asset('customer/images/logo.png') }}"
-                  class="footer-logo"
-                  alt="Footer Logo"
-                  width="105"
-                  height="25" />
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget widget-about">
+                                <img src="{{ asset ('customer/images/logo.png') }}" class="footer-logo" alt="Footer Logo" width="105"
+                                    height="25" />
+                                <p>
+                                    Asiano's Arts and Crafts offers handmade creations
+                                    by skills artisan, showcasing authentic, high-quality
+                                    products that blend traditon and creativity.
+                                </p>
 
-                <p>
-                  Praesent dapibus, neque id cursus ucibus, tortor neque
-                  egestas augue, eu vulputate magna eros eu erat.
-                </p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" target="_blank" title="Facebook"><i
+                                            class="icon-facebook-f"></i></a>
+                                    <a href="#" class="social-icon" target="_blank" title="Twitter"><i
+                                            class="icon-twitter"></i></a>
+                                    <a href="#" class="social-icon" target="_blank" title="Instagram"><i
+                                            class="icon-instagram"></i></a>
+                                    <a href="#" class="social-icon" target="_blank" title="Youtube"><i
+                                            class="icon-youtube"></i></a>
+                                </div>
+                                <!-- End .soial-icons -->
+                            </div>
+                            <!-- End .widget about-widget -->
+                        </div>
+                        <!-- End .col-sm-6 col-lg-3 -->
 
-                <div class="social-icons">
-                  <a
-                    href="#"
-                    class="social-icon"
-                    target="_blank"
-                    title="Facebook"><i class="icon-facebook-f"></i></a>
-                  <a
-                    href="#"
-                    class="social-icon"
-                    target="_blank"
-                    title="Twitter"><i class="icon-twitter"></i></a>
-                  <a
-                    href="#"
-                    class="social-icon"
-                    target="_blank"
-                    title="Instagram"><i class="icon-instagram"></i></a>
-                  <a
-                    href="#"
-                    class="social-icon"
-                    target="_blank"
-                    title="Youtube"><i class="icon-youtube"></i></a>
-                  <a
-                    href="#"
-                    class="social-icon"
-                    target="_blank"
-                    title="Pinterest"><i class="icon-pinterest"></i></a>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Useful Links</h4>
+                                <!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="about.html">About Asiano</a></li> <!-- wala pang html ito-->
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="login.html">Register</a></li>
+                                </ul>
+                                <!-- End .widget-list -->
+                            </div>
+                            <!-- End .widget -->
+                        </div>
+                        <!-- End .col-sm-6 col-lg-3 -->
+
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">My Account</h4>
+                                <!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a href="login.html">Sign In</a></li>
+                                    <li><a href="login.html">Account</a></li>
+                                    <li><a href="cart.html">View Cart</a></li>
+                                </ul>
+                                <!-- End .widget-list -->
+                            </div>
+                            <!-- End .widget -->
+                        </div>
+                        <!-- End .col-sm-6 col-lg-3 -->
+                    </div>
+                    <!-- End .row -->
                 </div>
-                <!-- End .soial-icons -->
-              </div>
-              <!-- End .widget about-widget -->
+                <!-- End .container -->
             </div>
-            <!-- End .col-sm-6 col-lg-3 -->
+            <!-- End .footer-middle -->
 
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget">
-                <h4 class="widget-title">Useful Links</h4>
-                <!-- End .widget-title -->
 
-                <ul class="widget-list">
-                  <li><a href="about.html">About Molla</a></li>
-                  <li><a href="#">How to shop on Molla</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
-                  <li><a href="login.html">Log in</a></li>
-                </ul>
-                <!-- End .widget-list -->
-              </div>
-              <!-- End .widget -->
-            </div>
-            <!-- End .col-sm-6 col-lg-3 -->
-
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget">
-                <h4 class="widget-title">Customer Service</h4>
-                <!-- End .widget-title -->
-
-                <ul class="widget-list">
-                  <li><a href="#">Payment Methods</a></li>
-                  <li><a href="#">Money-back guarantee!</a></li>
-                  <li><a href="#">Returns</a></li>
-                  <li><a href="#">Shipping</a></li>
-                  <li><a href="#">Terms and conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <!-- End .widget-list -->
-              </div>
-              <!-- End .widget -->
-            </div>
-            <!-- End .col-sm-6 col-lg-3 -->
-
-            <div class="col-sm-6 col-lg-3">
-              <div class="widget">
-                <h4 class="widget-title">My Account</h4>
-                <!-- End .widget-title -->
-
-                <ul class="widget-list">
-                  <li><a href="#">Sign In</a></li>
-                  <li><a href="cart.html">View Cart</a></li>
-                  <li><a href="#">My Wishlist</a></li>
-                  <li><a href="#">Track My Order</a></li>
-                  <li><a href="#">Help</a></li>
-                </ul>
-                <!-- End .widget-list -->
-              </div>
-              <!-- End .widget -->
-            </div>
-            <!-- End .col-sm-6 col-lg-3 -->
-          </div>
-          <!-- End .row -->
-        </div>
-        <!-- End .container -->
-      </div>
-      <!-- End .footer-middle -->
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="footer-copyright">
-            Copyright © 2019 Molla Store. All Rights Reserved.
-          </p>
-          <!-- End .footer-copyright -->
-          <figure class="footer-payments">
-            <img
-              src="{{ asset('Customer/images/payments.png') }}"
-              alt="Payment methods"
-              width="272"
-              height="20" />
-          </figure>
-          <!-- End .footer-payments -->
-        </div>
-        <!-- End .container -->
-      </div>
-      <!-- End .footer-bottom -->
-    </footer>
+        </footer>
 
     <!-- Google Map -->
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDc3LRykbLB-y8MuomRUIY0qH5S6xgBLX4"></script>
